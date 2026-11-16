@@ -1,0 +1,13 @@
+[19:38:47] PASS health reachable degraded
+[19:38:47] PASS environment report {'calibration': ['valid', 'valid']}
+[19:38:47] PASS connect all instruments ['analyzer', 'dut', 'siggen']
+[19:38:47] PASS 7 sequences listed ['frequency_sweep', 'full_pipeline', 'gain_verification', 'noise_floor', 'rms_measurement', 'snr_measurement', 'thd_measurement']
+[19:38:47] PASS full_pipeline PASS {'status': 'PASS', 'counts': {'CANCELLED': 0, 'ERROR': 0, 'FAIL': 0, 'PASS': 13, 'PENDING': 0, 'RUNNING': 0}}
+[19:38:47] PASS 13 tasks, sequential unique ids 
+[19:38:47] PASS CSV report rows == tasks {'rows': 13}
+[19:38:47] PASS HTML report contains run id {'bytes': 12328}
+[19:38:48] PASS PDF report parses and contains run id {'pages': 2, 'bytes': 17195}
+[19:38:48] PASS summary consistent with results {'summary_tasks': 13, 'results': 13}
+[19:38:48] PASS history retained after backend restart {'runs': 1}
+[19:38:48] PASS report still downloadable after restart 
+[19:38:48] PASS post-restart run on faulty DUT is FAIL (not ERROR) {'status': 'FAIL', 'counts': {'CANCELLED': 0, 'ERROR': 0, 'FAIL': 10, 'PASS': 3, 'PENDING': 0, 'RUNNING': 0}}

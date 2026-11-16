@@ -1,0 +1,71 @@
+{
+  "experiment": "E03",
+  "slug": "out_of_tolerance",
+  "base_seed": 12345,
+  "quick_mode": false,
+  "profiles": [
+    "NORMAL",
+    "LOWGAIN",
+    "HIGHTHD",
+    "NOISY",
+    "CLIPPING"
+  ],
+  "frequencies_hz": [
+    500,
+    1000,
+    2000
+  ],
+  "sequence": "full_pipeline",
+  "firmware": "1.0.0",
+  "limits": "sequence defaults (configs/sequences/full_pipeline.json)",
+  "uncertainty_budget": {
+    "relative": [
+      "rms",
+      "thd"
+    ],
+    "values": {
+      "rms": 0.003,
+      "gain": 0.05,
+      "thd": 0.05,
+      "snr": 0.3,
+      "noise_floor": 0.3,
+      "freq_sweep": 0.05
+    }
+  },
+  "borderline_rule": "|truth - nearest limit| <= uncertainty -> task is 'borderline' and not judged",
+  "proximity": {
+    "deltas_db": [
+      0.02,
+      0.05,
+      0.1,
+      0.5
+    ],
+    "seeds": [
+      13345,
+      13346,
+      13347,
+      13348,
+      13349,
+      13350,
+      13351,
+      13352,
+      13353,
+      13354
+    ],
+    "stimulus": "NORMAL, 1000 Hz, 0.05 Vpk, gain_verification",
+    "limit_cases": [
+      "min=T+d (expect FAIL low)",
+      "min=T-d (expect PASS)",
+      "max=T-d (expect FAIL high)",
+      "max=T+d (expect PASS)"
+    ]
+  },
+  "versions": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "backend": "0.1.0",
+    "simulator_reported_by_backend": "0.1.0",
+    "config_version": "1.0.0",
+    "simulator": "0.1.0"
+  }
+}

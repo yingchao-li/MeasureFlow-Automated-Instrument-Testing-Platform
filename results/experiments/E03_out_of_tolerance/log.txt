@@ -1,0 +1,15 @@
+[19:36:06] full_pipeline NORMAL @ 500 Hz
+[19:36:06] full_pipeline NORMAL @ 1000 Hz
+[19:36:06] full_pipeline NORMAL @ 2000 Hz
+[19:36:06] full_pipeline LOWGAIN @ 500 Hz
+[19:36:06] full_pipeline LOWGAIN @ 1000 Hz
+[19:36:06] full_pipeline LOWGAIN @ 2000 Hz
+[19:36:06] full_pipeline HIGHTHD @ 500 Hz
+[19:36:06] full_pipeline HIGHTHD @ 1000 Hz
+[19:36:07] full_pipeline HIGHTHD @ 2000 Hz
+[19:36:07] full_pipeline NOISY @ 500 Hz
+[19:36:07] full_pipeline NOISY @ 1000 Hz
+[19:36:07] full_pipeline NOISY @ 2000 Hz
+[19:36:07] full_pipeline CLIPPING @ 500 Hz
+[19:36:07] full_pipeline CLIPPING @ 1000 Hz
+[19:36:07] full_pipeline CLIPPING @ 2000 Hz

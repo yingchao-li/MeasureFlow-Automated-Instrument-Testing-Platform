@@ -1,0 +1,5 @@
+[19:36:01] connect/disconnect each instrument via REST
+[19:36:01] 200 x *IDN? per instrument through /api/instruments/command
+[19:36:02] raw TCP *IDN? (persistent and fresh connections)
+[19:36:02] error-queue behaviour
+[19:36:02] 20 reconnect cycles

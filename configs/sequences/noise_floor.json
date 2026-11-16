@@ -1,0 +1,83 @@
+{
+  "id": "noise_floor",
+  "name": "Noise Floor",
+  "version": "1.0.0",
+  "description": "Measures the in-band RMS noise level (tone and harmonics excluded).",
+  "dut": {
+    "profile": "NORMAL",
+    "firmware": "1.0.0"
+  },
+  "parameters": {
+    "frequency_hz": {
+      "label": "Stimulus frequency",
+      "unit": "Hz",
+      "default": 1000,
+      "min": 20,
+      "max": 20000
+    },
+    "amplitude_vpk": {
+      "label": "Stimulus amplitude",
+      "unit": "Vpk",
+      "default": 0.05,
+      "min": 0.001,
+      "max": 1.0
+    },
+    "noise_max_dbv": {
+      "label": "Noise floor upper limit",
+      "unit": "dBV",
+      "default": -70.0,
+      "min": -140,
+      "max": 0
+    }
+  },
+  "steps": [
+    {
+      "id": "init",
+      "type": "init",
+      "name": "Initialize instruments",
+      "instruments": [
+        "siggen",
+        "analyzer",
+        "dut"
+      ]
+    },
+    {
+      "id": "cfg_signal",
+      "type": "configure_signal",
+      "name": "Configure stimulus",
+      "function": "SIN",
+      "frequency_hz": "${frequency_hz}",
+      "amplitude_vpk": "${amplitude_vpk}",
+      "sample_rate_hz": 48000,
+      "output": true,
+      "settle_ms": 10
+    },
+    {
+      "id": "cfg_dut",
+      "type": "configure_dut",
+      "name": "Configure device under test",
+      "settings": {}
+    },
+    {
+      "id": "noise_floor",
+      "type": "measure",
+      "name": "Noise floor",
+      "measurement": "noise_floor",
+      "limits": {
+        "min": null,
+        "max": "${noise_max_dbv}",
+        "unit": "dBV"
+      }
+    },
+    {
+      "id": "cleanup",
+      "type": "cleanup",
+      "name": "Cleanup instruments"
+    },
+    {
+      "id": "report",
+      "type": "report",
+      "name": "Generate report"
+    }
+  ]
+}

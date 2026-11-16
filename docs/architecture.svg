@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 486" width="960" height="486" role="img" aria-labelledby="t d">
+  <title id="t">MeasureFlow architecture</title>
+  <desc id="d">React frontend calls the C++ backend over REST. The backend runs the test pipeline engine and talks SCPI over TCP to three Python virtual instruments that share one simulated signal path.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#4b5563"/>
+    </marker>
+    <style>
+      .bg{fill:#fbfaf8;stroke:#d9d6d0}
+      .lane{fill:#f3f1ed;stroke:#d9d6d0}
+      .box{fill:#ffffff;stroke:#c9c5be}
+      .acc{fill:#eaf0f8;stroke:#9db4d3}
+      .t{font:600 13px -apple-system,Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#1f2328}
+      .s{font:400 11.5px -apple-system,Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a}
+      .h{font:600 11px -apple-system,Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#57606a;letter-spacing:.08em}
+      .m{font:500 11px ui-monospace,'JetBrains Mono',Menlo,Consolas,monospace;fill:#2f4b73}
+      .ln{stroke:#4b5563;stroke-width:1.4;fill:none}
+    </style>
+  </defs>
+  <rect class="bg" x=".5" y=".5" width="959" height="485" rx="8"/>
+
+  <!-- Lane 1: frontend -->
+  <rect class="lane" x="24" y="24" width="912" height="96" rx="6"/>
+  <text class="h" x="40" y="46">FRONTEND · React + TypeScript + Vite + Tailwind + Recharts</text>
+  <rect class="box" x="40" y="58" width="196" height="48" rx="4"/><text class="t" x="52" y="79">Overview</text><text class="s" x="52" y="95">live waveform · FFT · status</text>
+  <rect class="box" x="252" y="58" width="196" height="48" rx="4"/><text class="t" x="264" y="79">Instruments</text><text class="s" x="264" y="95">config · SCPI console · comm log</text>
+  <rect class="box" x="464" y="58" width="196" height="48" rx="4"/><text class="t" x="476" y="79">Test Sequences</text><text class="s" x="476" y="95">run · cancel · live results</text>
+  <rect class="box" x="676" y="58" width="244" height="48" rx="4"/><text class="t" x="688" y="79">Reports</text><text class="s" x="688" y="95">trends · firmware compare · CSV/HTML/PDF</text>
+
+  <!-- arrow frontend -> backend -->
+  <line class="ln" x1="480" y1="120" x2="480" y2="150" marker-end="url(#arr)"/>
+  <text class="m" x="492" y="140">REST / JSON · 127.0.0.1:8080</text>
+
+  <!-- Lane 2: backend -->
+  <rect class="lane" x="24" y="152" width="912" height="168" rx="6"/>
+  <text class="h" x="40" y="174">BACKEND · C++17 · cpp-httplib · nlohmann/json · worker threads</text>
+  <rect class="box" x="40" y="186" width="160" height="56" rx="4"/><text class="t" x="52" y="207">REST API</text><text class="s" x="52" y="223">validation · unified errors</text>
+  <rect class="acc" x="216" y="186" width="212" height="56" rx="4"/><text class="t" x="228" y="207">Test Pipeline Engine</text><text class="s" x="228" y="223">sequences · runner · cancel · retry</text>
+  <rect class="box" x="444" y="186" width="176" height="56" rx="4"/><text class="t" x="456" y="207">Environment Manager</text><text class="s" x="456" y="223">health · calibration · versions</text>
+  <rect class="box" x="636" y="186" width="136" height="56" rx="4"/><text class="t" x="648" y="207">Result Store</text><text class="s" x="648" y="223">JSON · CSV · logs</text>
+  <rect class="box" x="788" y="186" width="132" height="56" rx="4"/><text class="t" x="800" y="207">Reports</text><text class="s" x="800" y="223">CSV · HTML · PDF</text>
+  <rect class="box" x="40" y="256" width="270" height="52" rx="4"/><text class="t" x="52" y="277">Instrument Adapters + Lease</text><text class="s" x="52" y="293">SigGen · Analyzer · DUT · exclusive access</text>
+  <rect class="acc" x="326" y="256" width="320" height="52" rx="4"/><text class="t" x="338" y="277">SCPI Client (RAII TCP)</text><text class="s" x="338" y="293">framing · timeouts · retry · reconnect · error queue</text>
+  <rect class="box" x="662" y="256" width="258" height="52" rx="4"/><text class="t" x="674" y="277">Structured Log</text><text class="s" x="674" y="293">ring buffer · JSONL · comm log</text>
+
+  <!-- arrow backend -> sim -->
+  <line class="ln" x1="480" y1="320" x2="480" y2="350" marker-end="url(#arr)"/>
+  <text class="m" x="492" y="340">SCPI over TCP · ASCII lines</text>
+
+  <!-- Lane 3: simulator -->
+  <rect class="lane" x="24" y="352" width="912" height="112" rx="6"/>
+  <text class="h" x="40" y="374">VIRTUAL INSTRUMENTS · Python · NumPy · SciPy · shared signal path</text>
+  <rect class="box" x="40" y="386" width="250" height="48" rx="4"/><text class="t" x="52" y="407">Signal Generator</text><text class="s" x="52" y="423">:5025 · SIN · SQU · CHIRP · NOISE</text>
+  <rect class="box" x="355" y="386" width="250" height="48" rx="4"/><text class="t" x="367" y="407">Hearing-aid DUT</text><text class="s" x="367" y="423">:5027 · gain · filters · THD · clip · fw</text>
+  <rect class="box" x="670" y="386" width="250" height="48" rx="4"/><text class="t" x="682" y="407">Audio Analyzer</text><text class="s" x="682" y="423">:5026 · RMS · gain · THD · SNR · FFT</text>
+  <line class="ln" x1="290" y1="410" x2="355" y2="410" marker-end="url(#arr)"/>
+  <line class="ln" x1="605" y1="410" x2="670" y2="410" marker-end="url(#arr)"/>
+  <path class="ln" d="M165 434 V452 H795 V436" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+  <text class="s" x="372" y="456" style="paint-order:stroke;stroke:#f3f1ed;stroke-width:4px">reference (stimulus) path for gain</text>
+</svg>

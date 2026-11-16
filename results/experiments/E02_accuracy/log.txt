@@ -1,0 +1,1 @@
+[19:36:05] note: thd_percent: 73.6 % of grid points within the INTERFACE.md guideline

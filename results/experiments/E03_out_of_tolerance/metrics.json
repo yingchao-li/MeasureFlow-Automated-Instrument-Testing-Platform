@@ -1,0 +1,193 @@
+{
+  "tasks_total": 195,
+  "tasks_judged": 189,
+  "tasks_borderline": 6,
+  "confusion_matrix_expected_vs_actual": {
+    "PASS": {
+      "PASS": 135,
+      "FAIL": 0,
+      "ERROR": 0,
+      "CANCELLED": 0
+    },
+    "FAIL": {
+      "PASS": 0,
+      "FAIL": 54,
+      "ERROR": 0,
+      "CANCELLED": 0
+    }
+  },
+  "detection_accuracy": 1.0,
+  "false_pass": 0,
+  "false_fail": 0,
+  "errors_on_clean_runs": 0,
+  "outcome_classes": {
+    "pass": 135,
+    "expected_measurement_fail": 54,
+    "borderline": 6
+  },
+  "actual_pass_rate": 0.7025641025641025,
+  "expected_pass_rate": 0.6923076923076923,
+  "per_kind_accuracy": {
+    "freq_sweep": {
+      "n": 120,
+      "accuracy": 1.0
+    },
+    "gain": {
+      "n": 15,
+      "accuracy": 1.0
+    },
+    "noise_floor": {
+      "n": 12,
+      "accuracy": 1.0
+    },
+    "rms": {
+      "n": 15,
+      "accuracy": 1.0
+    },
+    "snr": {
+      "n": 12,
+      "accuracy": 1.0
+    },
+    "thd": {
+      "n": 15,
+      "accuracy": 1.0
+    }
+  },
+  "per_profile": {
+    "NORMAL": {
+      "tasks": 39,
+      "expected_fail": 0,
+      "actual_fail": 0,
+      "actual_pass": 39,
+      "agreement": 1.0
+    },
+    "LOWGAIN": {
+      "tasks": 39,
+      "expected_fail": 30,
+      "actual_fail": 30,
+      "actual_pass": 9,
+      "agreement": 1.0
+    },
+    "HIGHTHD": {
+      "tasks": 39,
+      "expected_fail": 3,
+      "actual_fail": 3,
+      "actual_pass": 36,
+      "agreement": 1.0
+    },
+    "NOISY": {
+      "tasks": 39,
+      "expected_fail": 6,
+      "actual_fail": 6,
+      "actual_pass": 33,
+      "agreement": 1.0
+    },
+    "CLIPPING": {
+      "tasks": 39,
+      "expected_fail": 21,
+      "actual_fail": 19,
+      "actual_pass": 20,
+      "agreement": 1.0
+    }
+  },
+  "value_error_vs_truth": {
+    "freq_sweep": {
+      "n": 120,
+      "bias": -0.005565638508283221,
+      "mae": 0.011276581962717724,
+      "max_abs": 0.2774328086906639,
+      "rmse": 0.04739183887846238,
+      "std": 0.04726122713383085
+    },
+    "gain": {
+      "n": 15,
+      "bias": -0.0011674237050647443,
+      "mae": 0.0020323642332299367,
+      "max_abs": 0.021541460905719845,
+      "rmse": 0.005772832800782016,
+      "std": 0.005851988713124824
+    },
+    "noise_floor": {
+      "n": 12,
+      "bias": 0.1923461865497552,
+      "mae": 0.1923461865497552,
+      "max_abs": 0.19860137821642354,
+      "rmse": 0.19240213894434052,
+      "std": 0.004846095724574834
+    },
+    "rms": {
+      "n": 15,
+      "bias": -5.296963729039169e-05,
+      "mae": 9.066198071017348e-05,
+      "max_abs": 0.0007988785243933094,
+      "rmse": 0.00021531660361649125,
+      "std": 0.00021602444633056554
+    },
+    "snr": {
+      "n": 12,
+      "bias": 0.08780619042165405,
+      "mae": 0.08780619042165405,
+      "max_abs": 0.0963908393252666,
+      "rmse": 0.08818747188269219,
+      "std": 0.008555898807055155
+    },
+    "thd": {
+      "n": 15,
+      "bias": -0.01521414668643054,
+      "mae": 0.02865856232861676,
+      "max_abs": 0.3214823607047599,
+      "rmse": 0.08652635776911104,
+      "std": 0.08816790189376486
+    }
+  },
+  "proximity": {
+    "n_runs": 160,
+    "by_delta_db": {
+      "0.02": {
+        "n": 40,
+        "accuracy": 1.0,
+        "wrong": [],
+        "errors": 0
+      },
+      "0.05": {
+        "n": 40,
+        "accuracy": 1.0,
+        "wrong": [],
+        "errors": 0
+      },
+      "0.1": {
+        "n": 40,
+        "accuracy": 1.0,
+        "wrong": [],
+        "errors": 0
+      },
+      "0.5": {
+        "n": 40,
+        "accuracy": 1.0,
+        "wrong": [],
+        "errors": 0
+      }
+    },
+    "measured_gain_minus_truth_db": {
+      "n": 10,
+      "bias": -6.0223777442303115e-06,
+      "mae": 3.4169048901944164e-05,
+      "max_abs": 0.0001070523777428889,
+      "rmse": 4.711081758622066e-05,
+      "std": 4.9251735445429925e-05
+    },
+    "per_seed_measured_gain": {
+      "n": 10,
+      "mean": 20.01583283,
+      "std": 4.9251735445429925e-05,
+      "min": 20.0157318,
+      "p50": 20.015847,
+      "p95": 20.015884685,
+      "p99": 20.015897897,
+      "max": 20.0159012
+    },
+    "resolution_db": 0.02
+  },
+  "defects_observed": [],
+  "duration_s": 20.49
+}

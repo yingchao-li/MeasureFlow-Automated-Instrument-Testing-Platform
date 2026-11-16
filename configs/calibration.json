@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "instrument_id": "siggen",
+      "certificate": "SIM-CAL-0001",
+      "calibrated_on": "2026-10-01",
+      "valid_days": 365,
+      "simulated": true
+    },
+    {
+      "instrument_id": "analyzer",
+      "certificate": "SIM-CAL-0002",
+      "calibrated_on": "2026-10-01",
+      "valid_days": 365,
+      "simulated": true
+    }
+  ]
+}

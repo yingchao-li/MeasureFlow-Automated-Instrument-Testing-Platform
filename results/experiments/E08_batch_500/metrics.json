@@ -1,0 +1,74 @@
+{
+  "cases_planned": 500,
+  "cases_executed": 500,
+  "runs": 161,
+  "backend_alive_at_end": true,
+  "task_completion_rate": 1.0,
+  "outcome_classes": {
+    "pass": 385,
+    "expected_measurement_fail": 99,
+    "expected_injected_fault": 8,
+    "borderline": 8
+  },
+  "expected_status_accuracy": 1.0,
+  "borderline_not_judged": 8,
+  "actual_test_success_rate": {
+    "definition": "non-injected tasks that produced a valid measurement (PASS or FAIL, not ERROR)",
+    "value": 1.0
+  },
+  "unexpected_task_errors": 0,
+  "unexpected_run_errors": 0,
+  "unexpected_software_errors": 0,
+  "tasks_not_executed": 0,
+  "injected_fault_tasks": 8,
+  "fault_recovery_rate_note": "persistent faults are expected to end in ERROR (recovery is measured in E04/E05)",
+  "task_duration_ms": {
+    "n": 500,
+    "mean": 20.513556,
+    "std": 181.68434730199507,
+    "min": 1.354,
+    "p50": 2.4025,
+    "p95": 3.6191500000000003,
+    "p99": 230.91787999999994,
+    "max": 2029.597
+  },
+  "task_duration_ms_non_fault": {
+    "n": 492,
+    "mean": 2.4694451219512197,
+    "std": 0.5749922792686165,
+    "min": 1.354,
+    "p50": 2.3945,
+    "p95": 3.45645,
+    "p99": 4.51854,
+    "max": 6.486
+  },
+  "run_duration_ms": {
+    "n": 161,
+    "mean": 81.61681366459628,
+    "std": 316.79633303812494,
+    "min": 17.192,
+    "p50": 20.841,
+    "p95": 58.606,
+    "p99": 2047.3416,
+    "max": 2048.87
+  },
+  "wall_time_s": 20.83281808099946,
+  "throughput_tasks_per_s": 24.00059358536924,
+  "backend_resources": {
+    "after_warmup": {
+      "pid": 17025,
+      "rss_kb": 6280,
+      "fds": 9,
+      "threads": 18
+    },
+    "at_end": {
+      "pid": 17025,
+      "rss_kb": 24288,
+      "fds": 9,
+      "threads": 18
+    }
+  },
+  "mismatches": [],
+  "defects_observed": [],
+  "duration_s": 21.81
+}

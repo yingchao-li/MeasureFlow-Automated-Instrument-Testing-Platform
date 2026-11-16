@@ -1,0 +1,111 @@
+{
+  "cases": 50,
+  "error_mapping_accuracy": 1.0,
+  "fail_status_count": 0,
+  "backend_healthy_after_rate": 1.0,
+  "clean_run_after_pass_rate": 1.0,
+  "by_case": {
+    "garbage": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "COMM_INVALID_RESPONSE"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "nan": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "MEASUREMENT_NAN"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "inf": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "MEASUREMENT_INF"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "oversize": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "COMM_RESPONSE_TOO_LARGE"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "fragment": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "None"
+      ],
+      "statuses_seen": [
+        "PASS"
+      ]
+    },
+    "empty_line": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "COMM_INVALID_RESPONSE"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "truncated": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "COMM_TIMEOUT"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "dut_nan_samples": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "MEASUREMENT_NAN"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "dut_inf_samples": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "MEASUREMENT_NAN"
+      ],
+      "statuses_seen": [
+        "ERROR"
+      ]
+    },
+    "garbage_transient_default_retries": {
+      "n": 5,
+      "mapping_accuracy": 1.0,
+      "codes_seen": [
+        "None"
+      ],
+      "statuses_seen": [
+        "PASS"
+      ]
+    }
+  },
+  "defects_observed": [],
+  "duration_s": 9.84
+}

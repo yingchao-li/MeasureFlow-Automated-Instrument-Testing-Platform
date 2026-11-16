@@ -1,0 +1,857 @@
+[
+ {
+  "case": "garbage",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "unexpected response '#!GARBAGE~~'",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 28.398,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "unexpected response '#!GARBAGE~~'",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 19.396,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "unexpected response '#!GARBAGE~~'",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 20.399,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "unexpected response '#!GARBAGE~~'",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 20.198,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "unexpected response '#!GARBAGE~~'",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 19.436,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "nan",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 19.833,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "nan",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 23.471,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "nan",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 23.495,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "nan",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 22.432,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "nan",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 17.689,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "inf",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_INF",
+  "message": "instrument returned +Inf",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 19.804,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF"
+  ],
+  "correct": true
+ },
+ {
+  "case": "inf",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_INF",
+  "message": "instrument returned +Inf",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.128,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF"
+  ],
+  "correct": true
+ },
+ {
+  "case": "inf",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_INF",
+  "message": "instrument returned +Inf",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 25.016,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF"
+  ],
+  "correct": true
+ },
+ {
+  "case": "inf",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_INF",
+  "message": "instrument returned +Inf",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 24.052,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF"
+  ],
+  "correct": true
+ },
+ {
+  "case": "inf",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_INF",
+  "message": "instrument returned +Inf",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 24.443,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF"
+  ],
+  "correct": true
+ },
+ {
+  "case": "oversize",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_RESPONSE_TOO_LARGE",
+  "message": "response exceeds 1048576 bytes without terminator",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 30.951,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_RESPONSE_TOO_LARGE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "oversize",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_RESPONSE_TOO_LARGE",
+  "message": "response exceeds 1048576 bytes without terminator",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 27.16,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_RESPONSE_TOO_LARGE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "oversize",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_RESPONSE_TOO_LARGE",
+  "message": "response exceeds 1048576 bytes without terminator",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 25.633,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_RESPONSE_TOO_LARGE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "oversize",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_RESPONSE_TOO_LARGE",
+  "message": "response exceeds 1048576 bytes without terminator",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 24.458,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_RESPONSE_TOO_LARGE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "oversize",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_RESPONSE_TOO_LARGE",
+  "message": "response exceeds 1048576 bytes without terminator",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 25.803,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_RESPONSE_TOO_LARGE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "fragment",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 69.791,
+  "repeat": 0,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "fragment",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 66.436,
+  "repeat": 1,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "fragment",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 67.079,
+  "repeat": 2,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "fragment",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 67.679,
+  "repeat": 3,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "fragment",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 65.327,
+  "repeat": 4,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "empty_line",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "empty response",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 20.981,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "empty_line",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "empty response",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 22.046,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "empty_line",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "empty response",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.465,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "empty_line",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "empty response",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.166,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "empty_line",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_INVALID_RESPONSE",
+  "message": "empty response",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 22.291,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_INVALID_RESPONSE"
+  ],
+  "correct": true
+ },
+ {
+  "case": "truncated",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_TIMEOUT",
+  "message": "timeout waiting for response to 'MEAS:GAIN?': no data received for 301 ms",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 324.182,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_TIMEOUT"
+  ],
+  "correct": true
+ },
+ {
+  "case": "truncated",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_TIMEOUT",
+  "message": "timeout waiting for response to 'MEAS:GAIN?': no data received for 301 ms",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 320.843,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_TIMEOUT"
+  ],
+  "correct": true
+ },
+ {
+  "case": "truncated",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_TIMEOUT",
+  "message": "timeout waiting for response to 'MEAS:GAIN?': no data received for 301 ms",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 321.594,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_TIMEOUT"
+  ],
+  "correct": true
+ },
+ {
+  "case": "truncated",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_TIMEOUT",
+  "message": "timeout waiting for response to 'MEAS:GAIN?': no data received for 301 ms",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 322.478,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_TIMEOUT"
+  ],
+  "correct": true
+ },
+ {
+  "case": "truncated",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "COMM_TIMEOUT",
+  "message": "timeout waiting for response to 'MEAS:GAIN?': no data received for 300 ms",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 321.228,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "COMM_TIMEOUT"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_nan_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.691,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_nan_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 23.597,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_nan_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 22.071,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_nan_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.448,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_nan_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 20.219,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_inf_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 18.377,
+  "repeat": 0,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF",
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_inf_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.697,
+  "repeat": 1,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF",
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_inf_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 19.969,
+  "repeat": 2,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF",
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_inf_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 19.969,
+  "repeat": 3,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF",
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "dut_inf_samples",
+  "status": "ERROR",
+  "run_status": "ERROR",
+  "error_code": "MEASUREMENT_NAN",
+  "message": "instrument returned NaN (instrument error: -230 \"Data corrupt or stale\")",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 21.462,
+  "repeat": 4,
+  "expected_status": "ERROR",
+  "expected_codes": [
+   "MEASUREMENT_INF",
+   "MEASUREMENT_NAN"
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage_transient_default_retries",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 48.464,
+  "repeat": 0,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage_transient_default_retries",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 41.332,
+  "repeat": 1,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage_transient_default_retries",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 43.661,
+  "repeat": 2,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage_transient_default_retries",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 42.87,
+  "repeat": 3,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ },
+ {
+  "case": "garbage_transient_default_retries",
+  "status": "PASS",
+  "run_status": "PASS",
+  "error_code": null,
+  "message": "within limits",
+  "health_http": 200,
+  "health": "ok",
+  "clean_run_after": "PASS",
+  "duration_ms": 42.757,
+  "repeat": 4,
+  "expected_status": "PASS",
+  "expected_codes": [
+   ""
+  ],
+  "correct": true
+ }
+]

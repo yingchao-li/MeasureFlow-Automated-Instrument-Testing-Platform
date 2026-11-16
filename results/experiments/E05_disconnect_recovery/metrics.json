@@ -1,0 +1,48 @@
+{
+  "transient": {
+    "n": 15,
+    "recovered_pass_rate": 1.0,
+    "wall_ms": {
+      "n": 15,
+      "mean": 139.80266086661382,
+      "std": 55.65679405611476,
+      "min": 55.41613300010795,
+      "p50": 109.26071200083243,
+      "p95": 214.37282849965413,
+      "p99": 214.38961450014176,
+      "max": 214.39381100026367
+    }
+  },
+  "persistent": {
+    "n": 5,
+    "error_rate": 1.0,
+    "wall_ms": {
+      "n": 5,
+      "mean": 524.9110418000782,
+      "std": 2.0701782216649494,
+      "min": 522.1895699996821,
+      "p50": 524.5082299998103,
+      "p95": 527.3230472002979,
+      "p99": 527.5536286402712,
+      "max": 527.6112740002645
+    },
+    "error_codes_seen": [
+      "COMM_DISCONNECTED"
+    ]
+  },
+  "unexpected_fail_tasks": 0,
+  "kill_restart": {
+    "run_status": "ERROR",
+    "error_codes": [
+      "COMM_DISCONNECTED"
+    ],
+    "health_http": 200,
+    "health_status_after_kill": "degraded",
+    "recovery_ms": 818.772211000578,
+    "next_run_status": "PASS",
+    "instruments_connected_after": 3
+  },
+  "overall_recovery_rate": 1.0,
+  "defects_observed": [],
+  "duration_s": 7.21
+}

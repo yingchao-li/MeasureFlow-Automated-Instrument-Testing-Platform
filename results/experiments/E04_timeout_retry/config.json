@@ -1,0 +1,31 @@
+{
+  "experiment": "E04",
+  "slug": "timeout_retry",
+  "base_seed": 12345,
+  "quick_mode": false,
+  "task_retries": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "client_max_retries": [
+    0,
+    1,
+    2
+  ],
+  "analyzer_timeout_ms": 150,
+  "injected_delay_ms": 400,
+  "hang_limit_s": 30.0,
+  "sequence": "gain_verification (1 kHz, 0.05 Vpk, NORMAL, 1.0.0)",
+  "model": "recovered iff n < (1+task_retries)*(1+client_max_retries); PASS on task attempt n//(1+r)+1; else ERROR COMM_TIMEOUT with 1+t attempts",
+  "truth_gain_db": 20.015838852377744,
+  "versions": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "backend": "0.1.0",
+    "simulator_reported_by_backend": "0.1.0",
+    "config_version": "1.0.0",
+    "simulator": "0.1.0"
+  }
+}

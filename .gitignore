@@ -1,0 +1,24 @@
+# build / deps
+backend/build*/
+frontend/node_modules/
+frontend/dist/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.run/
+.coverage
+coverage/
+htmlcov/
+test-results/
+playwright-report/
+# runtime output
+results/runs/
+results/logs/
+results/tmp/
+reports/*
+!reports/.gitkeep
+!reports/examples/
+.DS_Store
+.idea/

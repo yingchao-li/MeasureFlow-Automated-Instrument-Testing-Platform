@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-11-16T18:36:01Z",
+  "seed": 12345,
+  "quick": false,
+  "backend": "/home/claude/MeasureFlow/backend/build/measureflow_backend",
+  "host": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "machine": "x86_64"
+  },
+  "experiments": {
+    "E01": {
+      "slug": "communication",
+      "duration_s": 1.7,
+      "headline": {
+        "rest_success": 1.0,
+        "tcp_success": 1.0,
+        "rest_p95_ms": 1.05241055020997
+      },
+      "crashed": false
+    },
+    "E02": {
+      "slug": "accuracy",
+      "duration_s": 2.6,
+      "headline": {
+        "gain_mae_db": 0.0010021973189660274,
+        "thd_within_guideline": 0.7361111111111112,
+        "rms_cross_check_max_rel": 3.897319801073175e-08
+      },
+      "crashed": false
+    },
+    "E03": {
+      "slug": "out_of_tolerance",
+      "duration_s": 20.5,
+      "headline": {
+        "accuracy": 1.0,
+        "false_pass": 0,
+        "false_fail": 0,
+        "resolution_db": 0.02
+      },
+      "crashed": false
+    },
+    "E04": {
+      "slug": "timeout_retry",
+      "duration_s": 73.4,
+      "headline": {
+        "cases": 84,
+        "status_accuracy": 1.0,
+        "unexpected_fail": 0,
+        "hangs": 0
+      },
+      "crashed": false
+    },
+    "E05": {
+      "slug": "disconnect_recovery",
+      "duration_s": 7.2,
+      "headline": {
+        "transient_recovered": 1.0,
+        "persistent_error": 1.0,
+        "kill_next_run": "PASS"
+      },
+      "crashed": false
+    },
+    "E06": {
+      "slug": "invalid_response",
+      "duration_s": 9.8,
+      "headline": {
+        "mapping_accuracy": 1.0,
+        "healthy_after": 1.0
+      },
+      "crashed": false
+    },
+    "E07": {
+      "slug": "firmware_regression",
+      "duration_s": 7.7,
+      "headline": {
+        "thd_regression_detected": 1.0,
+        "false_alarms": 0
+      },
+      "crashed": false
+    },
+    "E08": {
+      "slug": "batch_500",
+      "duration_s": 21.8,
+      "headline": {
+        "cases": 500,
+        "accuracy": 1.0,
+        "unexpected_errors": 0
+      },
+      "crashed": false
+    },
+    "E09": {
+      "slug": "cancellation",
+      "duration_s": 21.2,
+      "headline": {
+        "cleanup_success": 1.0,
+        "latency_p95_ms": 49.21562689969506
+      },
+      "crashed": false
+    },
+    "E10": {
+      "slug": "end_to_end",
+      "duration_s": 1.5,
+      "headline": {
+        "passed": 13,
+        "total": 13
+      },
+      "crashed": false
+    }
+  },
+  "defects": [],
+  "total_duration_s": 167.5
+}

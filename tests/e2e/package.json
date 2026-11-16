@@ -1,0 +1,14 @@
+{
+  "name": "measureflow-e2e",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Playwright end-to-end tests for the MeasureFlow web console (real backend + simulated instruments)",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "screenshots": "MF_SCREENSHOTS=1 playwright test specs/screenshots.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  }
+}

@@ -1,0 +1,1507 @@
+{
+  "experiment": "E08",
+  "slug": "batch_500",
+  "base_seed": 12345,
+  "quick_mode": false,
+  "cases": 500,
+  "plan_seed": 12345,
+  "runs_planned": 161,
+  "fault_share_of_single_runs": 0.06,
+  "faults": [
+    "timeout",
+    "disconnect",
+    "garbage"
+  ],
+  "task_retries": 1,
+  "analyzer_timeout_ms": 150,
+  "profiles_weights": {
+    "NORMAL": 6,
+    "LOWGAIN": 1,
+    "HIGHTHD": 1,
+    "NOISY": 1,
+    "CLIPPING": 1
+  },
+  "plan": [
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "LOWGAIN",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": [
+        "timeout",
+        "MF:FAULT:TIMEOUT 40,400"
+      ]
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.1.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": [
+        "disconnect",
+        "MF:FAULT:DISCONNECT 40"
+      ]
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "HIGHTHD",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": [
+        "garbage",
+        "MF:FAULT:GARBAGE 40"
+      ]
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": [
+        "timeout",
+        "MF:FAULT:TIMEOUT 40,400"
+      ]
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": [
+        "disconnect",
+        "MF:FAULT:DISCONNECT 40"
+      ]
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "frequency_sweep",
+      "tasks": 8,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 500,
+      "amplitude_vpk": 0.05,
+      "fault": [
+        "timeout",
+        "MF:FAULT:TIMEOUT 40,400"
+      ]
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "LOWGAIN",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.1,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "full_pipeline",
+      "tasks": 13,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "HIGHTHD",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": [
+        "timeout",
+        "MF:FAULT:TIMEOUT 40,400"
+      ]
+    },
+    {
+      "sequence": "rms_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 1000,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NOISY",
+      "firmware": "1.1.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "snr_measurement",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 2000,
+      "amplitude_vpk": 0.02,
+      "fault": [
+        "disconnect",
+        "MF:FAULT:DISCONNECT 40"
+      ]
+    },
+    {
+      "sequence": "thd_measurement",
+      "tasks": 1,
+      "profile": "CLIPPING",
+      "firmware": "1.1.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    },
+    {
+      "sequence": "noise_floor",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 4000,
+      "amplitude_vpk": 0.05,
+      "fault": null
+    },
+    {
+      "sequence": "gain_verification",
+      "tasks": 1,
+      "profile": "NORMAL",
+      "firmware": "1.0.0",
+      "frequency_hz": 250,
+      "amplitude_vpk": 0.02,
+      "fault": null
+    }
+  ],
+  "versions": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "backend": "0.1.0",
+    "simulator_reported_by_backend": "0.1.0",
+    "config_version": "1.0.0",
+    "simulator": "0.1.0"
+  }
+}

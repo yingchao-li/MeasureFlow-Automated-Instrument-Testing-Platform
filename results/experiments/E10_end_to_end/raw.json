@@ -1,0 +1,129 @@
+[
+ {
+  "check": "health reachable",
+  "ok": true,
+  "detail": "degraded",
+  "duration_ms": 2.6100719996975386
+ },
+ {
+  "check": "environment report",
+  "ok": true,
+  "detail": {
+   "calibration": [
+    "valid",
+    "valid"
+   ]
+  },
+  "duration_ms": 2.3965790005604504
+ },
+ {
+  "check": "connect all instruments",
+  "ok": true,
+  "detail": [
+   "analyzer",
+   "dut",
+   "siggen"
+  ],
+  "duration_ms": 2.18873399990116
+ },
+ {
+  "check": "7 sequences listed",
+  "ok": true,
+  "detail": [
+   "frequency_sweep",
+   "full_pipeline",
+   "gain_verification",
+   "noise_floor",
+   "rms_measurement",
+   "snr_measurement",
+   "thd_measurement"
+  ],
+  "duration_ms": null
+ },
+ {
+  "check": "full_pipeline PASS",
+  "ok": true,
+  "detail": {
+   "status": "PASS",
+   "counts": {
+    "CANCELLED": 0,
+    "ERROR": 0,
+    "FAIL": 0,
+    "PASS": 13,
+    "PENDING": 0,
+    "RUNNING": 0
+   }
+  },
+  "duration_ms": 54.77966199941875
+ },
+ {
+  "check": "13 tasks, sequential unique ids",
+  "ok": true,
+  "detail": null,
+  "duration_ms": null
+ },
+ {
+  "check": "CSV report rows == tasks",
+  "ok": true,
+  "detail": {
+   "rows": 13
+  },
+  "duration_ms": null
+ },
+ {
+  "check": "HTML report contains run id",
+  "ok": true,
+  "detail": {
+   "bytes": 12328
+  },
+  "duration_ms": null
+ },
+ {
+  "check": "PDF report parses and contains run id",
+  "ok": true,
+  "detail": {
+   "pages": 2,
+   "bytes": 17195
+  },
+  "duration_ms": null
+ },
+ {
+  "check": "summary consistent with results",
+  "ok": true,
+  "detail": {
+   "summary_tasks": 13,
+   "results": 13
+  },
+  "duration_ms": null
+ },
+ {
+  "check": "history retained after backend restart",
+  "ok": true,
+  "detail": {
+   "runs": 1
+  },
+  "duration_ms": 171.09378999975888
+ },
+ {
+  "check": "report still downloadable after restart",
+  "ok": true,
+  "detail": null,
+  "duration_ms": null
+ },
+ {
+  "check": "post-restart run on faulty DUT is FAIL (not ERROR)",
+  "ok": true,
+  "detail": {
+   "status": "FAIL",
+   "counts": {
+    "CANCELLED": 0,
+    "ERROR": 0,
+    "FAIL": 10,
+    "PASS": 3,
+    "PENDING": 0,
+    "RUNNING": 0
+   }
+  },
+  "duration_ms": null
+ }
+]

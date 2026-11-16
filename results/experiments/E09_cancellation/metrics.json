@@ -1,0 +1,40 @@
+{
+  "trials": 30,
+  "effective_cancellations": 20,
+  "finished_before_cancel": 10,
+  "cancelled_status_rate": 1.0,
+  "cleanup_success_rate": 1.0,
+  "output_off_rate": 1.0,
+  "lease_released_rate": 1.0,
+  "next_run_pass_rate": 1.0,
+  "persisted_cancelled_rate": 1.0,
+  "cancel_latency_ms": {
+    "n": 20,
+    "mean": 37.667344850024165,
+    "std": 7.993212289932384,
+    "min": 25.34345599997323,
+    "p50": 38.448205499662436,
+    "p95": 49.21562689969506,
+    "p99": 53.789502979725505,
+    "max": 54.93297199973313
+  },
+  "backend_resources": {
+    "baseline": {
+      "pid": 17496,
+      "rss_kb": 6916,
+      "fds": 9,
+      "threads": 18
+    },
+    "after": {
+      "pid": 17496,
+      "rss_kb": 16008,
+      "fds": 9,
+      "threads": 18
+    },
+    "threads_delta": 0,
+    "fds_delta": 0
+  },
+  "failures": [],
+  "defects_observed": [],
+  "duration_s": 21.17
+}

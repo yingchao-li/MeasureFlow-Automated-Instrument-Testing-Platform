@@ -1,0 +1,31 @@
+{
+  "experiment": "E09",
+  "slug": "cancellation",
+  "base_seed": 12345,
+  "quick_mode": false,
+  "trials": 30,
+  "analyzer_latency_ms": 12.0,
+  "cancel_delay_s": [
+    0.05,
+    1.2
+  ],
+  "sequences": [
+    "full_pipeline",
+    "frequency_sweep"
+  ],
+  "checks": [
+    "terminal status",
+    "OUTP? == 0 (direct)",
+    "leased_by is null for all instruments",
+    "next run PASS",
+    "run.json persisted CANCELLED"
+  ],
+  "versions": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "backend": "0.1.0",
+    "simulator_reported_by_backend": "0.1.0",
+    "config_version": "1.0.0",
+    "simulator": "0.1.0"
+  }
+}

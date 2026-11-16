@@ -1,0 +1,66 @@
+{
+  "experiment": "E02",
+  "slug": "accuracy",
+  "base_seed": 12345,
+  "quick_mode": false,
+  "frequencies_hz": [
+    100,
+    200,
+    500,
+    1000,
+    2000,
+    4000,
+    6000,
+    8000
+  ],
+  "amplitudes_vpk": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "profiles": [
+    "NORMAL",
+    "HIGHTHD",
+    "NOISY"
+  ],
+  "firmware": "1.0.0",
+  "repeatability": {
+    "n": 30,
+    "frequency_hz": 1000,
+    "amplitude_vpk": 0.05,
+    "profile": "NORMAL"
+  },
+  "guideline": {
+    "gain_db": [
+      "abs",
+      0.05
+    ],
+    "thd_percent": [
+      "rel_or_abs",
+      0.02,
+      0.005
+    ],
+    "snr_db": [
+      "abs",
+      0.5
+    ],
+    "noise_floor_dbv": [
+      "abs",
+      0.5
+    ],
+    "rms_v": [
+      "rel",
+      0.005
+    ]
+  },
+  "points": 16384,
+  "sample_rate_hz": 48000,
+  "method": "direct SCPI on the simulator; each point: MF:ACQ:INIT then MEAS:*? on the same stored buffer; truth from mfsim.truth via experiments/truth_adapter.py",
+  "cross_check": "MF:ACQ:WAV? 16384 (6 significant digits) -> numpy time-domain RMS and least-squares sine-fit gain",
+  "versions": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v470-x86_64-with-glibc2.39",
+    "backend_error": "HTTPConnectionPool(host='127.0.0.1', port=22610): Max retries exceeded with url: /api/health (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=22610): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+    "simulator": "0.1.0"
+  }
+}

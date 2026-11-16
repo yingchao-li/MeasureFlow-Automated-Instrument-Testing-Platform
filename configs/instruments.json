@@ -1,0 +1,36 @@
+{
+  "config_version": "1.0.0",
+  "max_response_bytes": 1048576,
+  "instruments": [
+    {
+      "id": "siggen",
+      "name": "Virtual Signal Generator",
+      "kind": "signal_generator",
+      "host": "127.0.0.1",
+      "port": 5025,
+      "timeout_ms": 1000,
+      "connect_timeout_ms": 500,
+      "max_retries": 2
+    },
+    {
+      "id": "analyzer",
+      "name": "Virtual Audio Analyzer",
+      "kind": "audio_analyzer",
+      "host": "127.0.0.1",
+      "port": 5026,
+      "timeout_ms": 2000,
+      "connect_timeout_ms": 500,
+      "max_retries": 2
+    },
+    {
+      "id": "dut",
+      "name": "Virtual Hearing-Aid DUT",
+      "kind": "device_under_test",
+      "host": "127.0.0.1",
+      "port": 5027,
+      "timeout_ms": 1000,
+      "connect_timeout_ms": 500,
+      "max_retries": 2
+    }
+  ]
+}

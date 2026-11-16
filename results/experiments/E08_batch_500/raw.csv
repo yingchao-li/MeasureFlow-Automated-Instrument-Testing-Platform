@@ -1,0 +1,501 @@
+plan_index,run_id,sequence,profile,firmware,kind,test_name,injected_fault,expected_status,status,error_code,attempts,duration_ms,value,class
+0,run-20261116-183804-1b19,gain_verification,NORMAL,1.0.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,6.486,20.0093448,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.744,17.0546358,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.624,19.8016976,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.529,20.0579328,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.355,20.0644775,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.431,20.0648491,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.384,20.0555916,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.496,19.7702823,pass
+1,run-20261116-183804-5ad3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.546,17.0546341,pass
+2,run-20261116-183804-9278,rms_measurement,NOISY,1.0.0,rms,RMS @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.749,0.712420019,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.262,0.0708064728,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,gain,Gain @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.715,13.9914986,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.195,0.0116850887,pass
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,snr,SNR @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.48,58.8828792,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,1.88,-81.5861373,pass
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.469,10.9903767,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.367,13.7371852,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.441,13.993427,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.475,14.0001556,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.545,14.0002332,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.333,13.9912588,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,4.789,13.7058188,expected_measurement_fail
+3,run-20261116-183804-7865,full_pipeline,LOWGAIN,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.443,10.9901168,expected_measurement_fail
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.95,17.0060406,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,3.02,19.7531099,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.888,20.0092674,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.862,20.0158556,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.569,20.0162251,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,3.454,20.0069909,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.438,19.721645,pass
+4,run-20261116-183805-3fd8,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.453,17.0060371,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.817,0.711622053,expected_measurement_fail
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,gain,Gain @ 4000 Hz,,PASS,PASS,,1,2.545,20.0555827,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.089,0.143201079,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,snr,SNR @ 4000 Hz,,PASS,PASS,,1,1.924,77.9266961,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.701,-80.5861256,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.544,17.0546036,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.643,19.8016305,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,3.347,20.0579346,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.475,20.0644617,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.451,20.0648023,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.597,20.0555559,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.759,19.7702641,pass
+5,run-20261116-183805-c818,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.366,17.0545745,pass
+6,run-20261116-183805-a7c9,gain_verification,NORMAL,1.1.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,2.661,20.0579708,pass
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.686,0.0708066195,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,gain,Gain @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.323,13.991521,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,1.858,0.014528436,pass
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,snr,SNR @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.853,57.8828539,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.618,-80.5861374,pass
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.326,10.9903794,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.968,13.7371579,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.563,13.9933911,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.436,14.0001474,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.482,14.0001889,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.092,13.9912519,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.432,13.7057915,expected_measurement_fail
+7,run-20261116-183805-151e,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.506,10.9900878,expected_measurement_fail
+8,run-20261116-183805-d193,thd_measurement,NOISY,1.1.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,2.162,0.158091876,pass
+9,run-20261116-183805-ee45,thd_measurement,NOISY,1.1.0,thd,THD @ 500 Hz,,PASS,PASS,,1,3.1,0.130458357,pass
+10,run-20261116-183805-b7ff,thd_measurement,NORMAL,1.0.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,1.773,0.0417773551,pass
+11,run-20261116-183805-fce2,rms_measurement,NORMAL,1.0.0,rms,RMS @ 2000 Hz,timeout,ERROR,ERROR,COMM_TIMEOUT,2,2029.597,,expected_injected_fault
+12,run-20261116-183807-492f,gain_verification,LOWGAIN,1.0.0,gain,Gain @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.886,13.9065574,expected_measurement_fail
+13,run-20261116-183807-5280,gain_verification,HIGHTHD,1.1.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.503,19.9679802,pass
+14,run-20261116-183807-e527,rms_measurement,LOWGAIN,1.1.0,rms,RMS @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.635,0.177116907,expected_measurement_fail
+15,run-20261116-183807-a4a0,rms_measurement,NORMAL,1.0.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.75,0.141448258,expected_measurement_fail
+16,run-20261116-183808-7921,thd_measurement,NORMAL,1.0.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,2.26,0.0417773551,pass
+17,run-20261116-183808-e8d7,gain_verification,NORMAL,1.0.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,2.404,20.0025721,pass
+18,run-20261116-183808-31d2,gain_verification,NORMAL,1.1.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,2.567,20.0025694,pass
+19,run-20261116-183808-0289,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.898,-80.6666618,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.857,17.0546358,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.492,19.8016976,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.208,20.0579328,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.361,20.0644775,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.287,20.0648491,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.27,20.0555916,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.301,19.7702823,pass
+20,run-20261116-183808-5f5b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.335,17.0546341,pass
+21,run-20261116-183808-ba56,thd_measurement,LOWGAIN,1.1.0,thd,THD @ 2000 Hz,,PASS,PASS,,1,3.182,0.0415955241,pass
+22,run-20261116-183808-6ae8,thd_measurement,CLIPPING,1.1.0,thd,THD @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,3.198,32.8466307,expected_measurement_fail
+23,run-20261116-183808-ad1b,snr_measurement,CLIPPING,1.0.0,snr,SNR @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.761,34.5320676,borderline
+24,run-20261116-183808-144c,gain_verification,NORMAL,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.718,19.90648,pass
+25,run-20261116-183808-dcb7,gain_verification,NORMAL,1.0.0,gain,Gain @ 1000 Hz,,PASS,PASS,,1,2.583,20.0644492,pass
+26,run-20261116-183808-4fe3,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.737,-80.6933141,pass
+27,run-20261116-183808-6d50,noise_floor,HIGHTHD,1.0.0,noise_floor,Noise floor,disconnect,ERROR,ERROR,COMM_DISCONNECTED,2,229.391,,expected_injected_fault
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.618,16.9924612,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.802,19.7395489,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.395,19.9955161,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.38,20.0022108,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.303,20.0025751,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.286,19.9933982,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.374,19.7079626,pass
+28,run-20261116-183809-1477,frequency_sweep,NORMAL,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.361,16.9924535,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.354,0.141448258,expected_measurement_fail
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,1.694,20.0025177,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,thd,THD @ 2000 Hz,,PASS,PASS,,1,1.63,0.040951273,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,snr,SNR @ 2000 Hz,,PASS,PASS,,1,1.607,63.9000609,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.487,-80.6086625,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.207,16.9923178,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,1.923,19.739234,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,1.845,19.9955065,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,1.853,20.0021358,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,1.843,20.002343,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,1.661,19.9932345,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,1.738,19.7078676,pass
+29,run-20261116-183809-885b,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,1.905,16.9921717,pass
+30,run-20261116-183809-f780,thd_measurement,NORMAL,1.1.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,1.751,0.101237636,pass
+31,run-20261116-183809-835b,gain_verification,LOWGAIN,1.0.0,gain,Gain @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.468,13.993759,expected_measurement_fail
+32,run-20261116-183809-5a93,snr_measurement,LOWGAIN,1.0.0,snr,SNR @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.459,57.56197,expected_measurement_fail
+33,run-20261116-183809-e1b1,snr_measurement,LOWGAIN,1.0.0,snr,SNR @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.341,57.56197,expected_measurement_fail
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.322,17.0546358,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.526,19.8016976,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.117,20.0579328,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.587,20.0644775,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.497,20.0648491,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.381,20.0555916,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.46,19.7702823,pass
+34,run-20261116-183809-3636,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.364,17.0546341,pass
+35,run-20261116-183809-2e6a,snr_measurement,NORMAL,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,2.199,77.6058227,pass
+36,run-20261116-183809-7af9,noise_floor,NOISY,1.0.0,noise_floor,Noise floor,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.08,-50.6586891,expected_measurement_fail
+37,run-20261116-183809-df97,thd_measurement,HIGHTHD,1.0.0,thd,THD @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.334,1.02918045,borderline
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,rms,RMS @ 4000 Hz,,PASS,PASS,,1,2.53,0.354668174,pass
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,gain,Gain @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.529,14.0070502,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,3.018,0.0711962983,pass
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,snr,SNR @ 4000 Hz,,PASS,PASS,,1,2.012,71.8781294,pass
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.625,-80.586133,pass
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.523,11.0060531,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.397,13.7530524,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.484,14.0093486,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.275,14.0159011,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.41,14.0162085,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.619,14.0069965,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.28,13.721686,expected_measurement_fail
+38,run-20261116-183809-af12,full_pipeline,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.464,11.0059948,expected_measurement_fail
+39,run-20261116-183809-3277,snr_measurement,HIGHTHD,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,2.346,71.9956312,pass
+40,run-20261116-183809-a4e1,thd_measurement,LOWGAIN,1.1.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.184,0.0107583817,pass
+41,run-20261116-183809-f5ce,gain_verification,NORMAL,1.1.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,2.554,19.9956887,pass
+42,run-20261116-183810-733d,thd_measurement,NOISY,1.0.0,thd,THD @ 2000 Hz,,PASS,PASS,,1,2.235,0.109596932,pass
+43,run-20261116-183810-971b,thd_measurement,NORMAL,1.1.0,thd,THD @ 500 Hz,,PASS,PASS,,1,3.078,0.102081622,pass
+44,run-20261116-183810-fd0d,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.615,-80.6586658,pass
+45,run-20261116-183810-7eb4,thd_measurement,HIGHTHD,1.0.0,thd,THD @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.134,1.03757147,borderline
+46,run-20261116-183810-a0b1,rms_measurement,NORMAL,1.0.0,rms,RMS @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.624,0.712391509,expected_measurement_fail
+47,run-20261116-183810-ea23,thd_measurement,HIGHTHD,1.0.0,thd,THD @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.292,7.18628774,expected_measurement_fail
+48,run-20261116-183810-d312,noise_floor,NOISY,1.0.0,noise_floor,Noise floor,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.018,-50.6586891,expected_measurement_fail
+49,run-20261116-183810-0cda,snr_measurement,NORMAL,1.0.0,snr,SNR @ 2000 Hz,,PASS,PASS,,1,4.518,77.7331738,pass
+50,run-20261116-183810-c2f2,snr_measurement,NORMAL,1.0.0,snr,SNR @ 1000 Hz,,PASS,PASS,,1,2.381,71.678213,pass
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.615,8.49742872,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.596,11.2443317,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.444,11.4996156,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.773,11.5026786,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.343,11.5094853,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.166,11.4296913,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.271,10.8827078,expected_measurement_fail
+51,run-20261116-183810-daaf,frequency_sweep,CLIPPING,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.261,7.78160841,expected_measurement_fail
+52,run-20261116-183810-6ed3,thd_measurement,NORMAL,1.1.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,2.676,0.0339802719,pass
+53,run-20261116-183810-58be,snr_measurement,NORMAL,1.1.0,snr,SNR @ 1000 Hz,,PASS,PASS,,1,3.792,64.7056968,pass
+54,run-20261116-183810-7805,rms_measurement,NORMAL,1.0.0,rms,RMS @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.704,0.139799185,expected_measurement_fail
+55,run-20261116-183810-bef2,gain_verification,NORMAL,1.1.0,gain,Gain @ 4000 Hz,,PASS,PASS,,1,3.393,19.9931936,pass
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.871,8.49741862,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.534,11.2443194,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.431,11.4996257,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.377,11.5026762,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.254,11.5094835,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.241,11.4296827,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.294,10.8827099,expected_measurement_fail
+56,run-20261116-183810-0afb,frequency_sweep,CLIPPING,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.444,7.78159797,expected_measurement_fail
+57,run-20261116-183810-04d6,thd_measurement,LOWGAIN,1.0.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.192,0.0344681783,pass
+58,run-20261116-183811-9220,noise_floor,CLIPPING,1.1.0,noise_floor,Noise floor,,FAIL,PASS,,1,2.115,-70.8796646,borderline
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.665,0.86809658,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,gain,Gain @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.423,21.7626592,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,thd,THD @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.985,6.75736166,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,snr,SNR @ 2000 Hz,,PASS,PASS,,1,1.926,80.6396648,pass
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,2.114,-81.6086688,pass
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.528,18.7524236,pass
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.613,21.4994579,borderline
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.418,21.7557641,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.592,21.7622844,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.39,21.7626338,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.306,21.7533783,expected_measurement_fail
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.563,21.4680915,borderline
+59,run-20261116-183811-502d,full_pipeline,HIGHTHD,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.394,18.7524023,pass
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,4.241,11.0061177,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.869,13.753187,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.66,14.0093448,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.559,14.0159328,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.478,14.0163023,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.529,14.0070681,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.457,13.7217223,expected_measurement_fail
+60,run-20261116-183811-5876,frequency_sweep,LOWGAIN,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,3.455,11.0061143,expected_measurement_fail
+61,run-20261116-183811-9ed5,gain_verification,NORMAL,1.1.0,gain,Gain @ 1000 Hz,,PASS,PASS,,1,2.779,20.0158031,pass
+62,run-20261116-183811-7d8f,noise_floor,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,2.235,-81.6786323,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,rms,RMS @ 250 Hz,,PASS,PASS,,1,1.908,0.36923101,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,3.456,20.3655266,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,thd,THD @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,2.789,2.99494209,expected_measurement_fail
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,2.85,72.2379429,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.499,-80.5906079,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.072,17.4650392,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,3.154,20.2120412,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,3.127,20.4683382,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.843,20.4748882,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.29,20.4751989,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.212,20.4659835,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.471,20.1806748,pass
+63,run-20261116-183811-8799,full_pipeline,HIGHTHD,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,4.438,17.4649838,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.005,16.9924802,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.527,19.739572,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.382,19.9954971,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.349,20.0022153,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.414,20.0025785,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.388,19.9934142,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.548,19.7079588,pass
+64,run-20261116-183811-448a,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.329,16.9924715,pass
+65,run-20261116-183811-112e,rms_measurement,NORMAL,1.0.0,rms,RMS @ 250 Hz,,PASS,PASS,,1,1.514,0.350050717,pass
+66,run-20261116-183811-e97b,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.936,-80.6786307,pass
+67,run-20261116-183811-0584,snr_measurement,CLIPPING,1.0.0,snr,SNR @ 4000 Hz,,PASS,PASS,,1,2.402,63.6621699,borderline
+68,run-20261116-183811-b5a2,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.794,-80.6786307,pass
+69,run-20261116-183812-a62c,noise_floor,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,1.929,-81.666664,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,rms,RMS @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.443,0.704036967,expected_measurement_fail
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.025,19.9551253,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,thd,THD @ 250 Hz,,PASS,PASS,,1,1.546,0.298401561,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,1.778,78.8481236,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,1.968,-81.5905973,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.414,17.0546033,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.046,19.8016332,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.18,20.0579382,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.088,20.0644625,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.094,20.0648067,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,1.751,20.0555566,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,1.856,19.7702669,pass
+70,run-20261116-183812-c326,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.454,17.0545774,pass
+71,run-20261116-183812-cc52,gain_verification,LOWGAIN,1.0.0,gain,Gain @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.38,14.0000219,expected_measurement_fail
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.565,17.0546358,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,1.887,19.8016976,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,1.968,20.0579328,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,1.731,20.0644775,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,1.806,20.0648491,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,1.674,20.0555916,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,1.823,19.7702823,pass
+72,run-20261116-183812-8c9b,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,1.693,17.0546341,pass
+73,run-20261116-183812-eec8,rms_measurement,CLIPPING,1.0.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.5,0.263719496,expected_measurement_fail
+74,run-20261116-183812-9bf0,gain_verification,CLIPPING,1.0.0,gain,Gain @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.987,17.0546105,expected_measurement_fail
+75,run-20261116-183812-3e11,snr_measurement,NORMAL,1.0.0,snr,SNR @ 1000 Hz,,PASS,PASS,,1,2.267,77.7474637,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.034,16.9978247,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.463,19.7460671,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.311,19.9901466,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.196,20.0034966,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.054,20.0035392,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.5,19.9979397,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.302,19.7069022,pass
+76,run-20261116-183812-af90,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.23,16.9975564,pass
+77,run-20261116-183812-88ae,snr_measurement,NORMAL,1.0.0,snr,SNR @ 500 Hz,,PASS,PASS,,1,2.049,77.7143365,pass
+78,run-20261116-183812-ebf3,thd_measurement,NORMAL,1.0.0,thd,THD @ 500 Hz,,PASS,PASS,,1,2.248,0.11858563,pass
+79,run-20261116-183812-e644,thd_measurement,NORMAL,1.1.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.091,0.115397076,pass
+80,run-20261116-183812-ace3,snr_measurement,NORMAL,1.1.0,snr,SNR @ 500 Hz,,PASS,PASS,,1,2.377,64.6726507,pass
+81,run-20261116-183812-8c94,thd_measurement,NORMAL,1.0.0,thd,THD @ 500 Hz,,PASS,PASS,,1,2.177,0.11858563,pass
+82,run-20261116-183812-cf8a,gain_verification,NORMAL,1.0.0,gain,Gain @ 1000 Hz,,PASS,PASS,,1,2.6,20.0157987,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.763,17.0060406,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.481,19.7531099,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.24,20.0092674,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,4.808,20.0158556,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.449,20.0162251,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.509,20.0069909,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.708,19.721645,pass
+83,run-20261116-183812-175f,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.829,17.0060371,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.31,17.0546358,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.573,19.8016976,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.647,20.0579328,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,3.207,20.0644775,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,3.617,20.0648491,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.462,20.0555916,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.33,19.7702823,pass
+84,run-20261116-183813-057d,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.382,17.0546341,pass
+85,run-20261116-183813-198e,snr_measurement,NORMAL,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,2.362,77.6058227,pass
+86,run-20261116-183813-c3ad,rms_measurement,NORMAL,1.0.0,rms,RMS @ 250 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.852,0.139799185,expected_measurement_fail
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.936,17.0556981,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.463,19.8029881,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.406,20.0568706,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.298,20.0647321,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.254,20.06504,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.267,20.0564898,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.228,19.7700721,pass
+87,run-20261116-183813-09a0,frequency_sweep,NOISY,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,3.421,17.0556444,pass
+88,run-20261116-183813-f669,gain_verification,NORMAL,1.0.0,gain,Gain @ 500 Hz,garbage,ERROR,ERROR,COMM_INVALID_RESPONSE,2,235.856,,expected_injected_fault
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.854,17.0546358,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.47,19.8016976,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.306,20.0579328,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.577,20.0644775,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.164,20.0648491,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.445,20.0555916,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.574,19.7702823,pass
+89,run-20261116-183813-12e7,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.462,17.0546341,pass
+90,run-20261116-183813-4d1e,thd_measurement,NORMAL,1.0.0,thd,THD @ 500 Hz,,PASS,PASS,,1,2.536,0.11858563,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.997,0.712337845,expected_measurement_fail
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,2.359,20.0648376,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,thd,THD @ 2000 Hz,,PASS,PASS,,1,1.945,0.287252552,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,snr,SNR @ 2000 Hz,,PASS,PASS,,1,1.967,78.9418429,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,1.641,-81.6086687,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.46,17.0546033,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.207,19.8016332,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.19,20.0579382,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.429,20.0644625,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.2,20.0648067,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.196,20.0555566,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.095,19.7702669,pass
+91,run-20261116-183813-8d69,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.255,17.0545774,pass
+92,run-20261116-183814-da9a,rms_measurement,NORMAL,1.0.0,rms,RMS @ 1000 Hz,,PASS,PASS,,1,2.321,0.354205678,pass
+93,run-20261116-183814-13b9,rms_measurement,LOWGAIN,1.0.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.598,0.177260633,expected_measurement_fail
+94,run-20261116-183814-b8ba,thd_measurement,CLIPPING,1.0.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,1.991,0.0417773551,pass
+95,run-20261116-183814-166f,gain_verification,CLIPPING,1.1.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,2.904,19.9956887,pass
+96,run-20261116-183814-d542,gain_verification,NORMAL,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.461,19.90648,pass
+97,run-20261116-183814-cb19,gain_verification,HIGHTHD,1.1.0,gain,Gain @ 4000 Hz,,PASS,PASS,,1,2.745,20.0684122,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.809,0.141448323,expected_measurement_fail
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,2.067,20.0025209,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,thd,THD @ 2000 Hz,,PASS,PASS,,1,2.003,0.0331608029,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,snr,SNR @ 2000 Hz,,PASS,PASS,,1,1.953,64.9000731,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,1.739,-81.6086627,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.262,16.9923165,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.164,19.7392477,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.331,19.9955245,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.187,20.0021399,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.281,20.0023652,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.208,19.993238,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.257,19.7078813,pass
+98,run-20261116-183814-2c33,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.282,16.9921862,pass
+99,run-20261116-183814-f902,gain_verification,NORMAL,1.0.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,2.44,20.0093448,pass
+100,run-20261116-183814-90c5,thd_measurement,NOISY,1.0.0,thd,THD @ 500 Hz,,PASS,PASS,,1,2.44,0.151036727,pass
+101,run-20261116-183814-fca0,snr_measurement,NORMAL,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,3.108,71.5365651,pass
+102,run-20261116-183814-1614,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.474,-80.6586787,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.421,17.0546358,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,3.333,19.8016976,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,3.205,20.0579328,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,3.088,20.0644775,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,3.135,20.0648491,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.879,20.0555916,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.77,19.7702823,pass
+103,run-20261116-183814-557c,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.165,17.0546341,pass
+104,run-20261116-183814-1399,thd_measurement,NORMAL,1.1.0,thd,THD @ 1000 Hz,timeout,ERROR,ERROR,COMM_TIMEOUT,2,2028.163,,expected_injected_fault
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.569,17.0546358,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.673,19.8016976,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.627,20.0579328,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.52,20.0644775,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.472,20.0648491,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.655,20.0555916,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.68,19.7702823,pass
+105,run-20261116-183817-99b1,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.651,17.0546341,pass
+106,run-20261116-183817-07df,gain_verification,NORMAL,1.1.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,4.524,20.0162214,pass
+107,run-20261116-183817-5092,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.757,-80.6609805,pass
+108,run-20261116-183817-f6f9,gain_verification,NORMAL,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.632,19.90648,pass
+109,run-20261116-183817-4def,rms_measurement,NORMAL,1.1.0,rms,RMS @ 2000 Hz,,PASS,PASS,,1,1.794,0.354178728,pass
+110,run-20261116-183817-c7fb,gain_verification,NORMAL,1.0.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,4.189,20.0648478,pass
+111,run-20261116-183817-fe2f,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.734,-80.678626,pass
+112,run-20261116-183817-e399,snr_measurement,LOWGAIN,1.0.0,snr,SNR @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.745,57.6707199,expected_measurement_fail
+113,run-20261116-183817-24aa,rms_measurement,NOISY,1.0.0,rms,RMS @ 1000 Hz,,PASS,PASS,,1,1.879,0.35424134,pass
+114,run-20261116-183817-488e,noise_floor,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,2.027,-81.6933143,pass
+115,run-20261116-183817-8113,thd_measurement,NORMAL,1.0.0,thd,THD @ 250 Hz,,PASS,PASS,,1,2.218,0.118704266,pass
+116,run-20261116-183817-6653,noise_floor,CLIPPING,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.967,-80.6786324,borderline
+117,run-20261116-183817-303f,snr_measurement,HIGHTHD,1.0.0,snr,SNR @ 2000 Hz,,PASS,PASS,,1,2.104,72.1230163,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,rms,RMS @ 1000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.611,0.712390795,expected_measurement_fail
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,gain,Gain @ 1000 Hz,,PASS,PASS,,1,2.253,20.064476,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,2.178,0.294544054,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,snr,SNR @ 1000 Hz,,PASS,PASS,,1,2.336,78.9462002,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,1.802,-81.5975662,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.544,17.0546033,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.337,19.8016332,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.387,20.0579382,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.257,20.0644625,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.15,20.0648067,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.119,20.0555566,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.182,19.7702669,pass
+118,run-20261116-183817-ed73,full_pipeline,NORMAL,1.1.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.201,17.0545774,pass
+119,run-20261116-183818-973f,noise_floor,NORMAL,1.1.0,noise_floor,Noise floor,disconnect,ERROR,ERROR,COMM_DISCONNECTED,2,230.486,,expected_injected_fault
+120,run-20261116-183818-4e8a,gain_verification,NORMAL,1.0.0,gain,Gain @ 1000 Hz,,PASS,PASS,,1,2.253,20.0644492,pass
+121,run-20261116-183818-5ff8,thd_measurement,NORMAL,1.1.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,3.16,0.101237636,pass
+122,run-20261116-183818-802f,thd_measurement,NORMAL,1.0.0,thd,THD @ 250 Hz,,PASS,PASS,,1,2.189,0.040685384,pass
+123,run-20261116-183818-e49f,thd_measurement,HIGHTHD,1.1.0,thd,THD @ 500 Hz,,PASS,PASS,,1,2.42,0.849250987,pass
+124,run-20261116-183818-c082,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.107,-80.678626,pass
+125,run-20261116-183818-e4c4,thd_measurement,NORMAL,1.0.0,thd,THD @ 250 Hz,,PASS,PASS,,1,2.27,0.040685384,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.69,17.0060406,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.948,19.7531099,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.636,20.0092674,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.373,20.0158556,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.682,20.0162251,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.457,20.0069909,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.733,19.721645,pass
+126,run-20261116-183818-2cd6,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.803,17.0060371,pass
+127,run-20261116-183818-a87b,snr_measurement,NOISY,1.0.0,snr,SNR @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.085,41.6453384,expected_measurement_fail
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.285,17.0546358,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.682,19.8016976,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.921,20.0579328,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.591,20.0644775,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.814,20.0648491,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.61,20.0555916,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.493,19.7702823,pass
+128,run-20261116-183818-c1a3,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.779,17.0546341,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.636,17.0546358,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,3.018,19.8016976,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,3.189,20.0579328,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.928,20.0644775,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.894,20.0648491,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.785,20.0555916,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,3.483,19.7702823,pass
+129,run-20261116-183818-d974,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.668,17.0546341,pass
+130,run-20261116-183818-f15c,snr_measurement,NORMAL,1.1.0,snr,SNR @ 4000 Hz,,PASS,PASS,,1,2.345,72.6346802,pass
+131,run-20261116-183819-b6bf,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.729,-80.6933145,pass
+132,run-20261116-183819-2b9a,gain_verification,NORMAL,1.1.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,3.371,19.9956887,pass
+133,run-20261116-183819-16ed,thd_measurement,NORMAL,1.1.0,thd,THD @ 1000 Hz,,PASS,PASS,,1,2.644,0.101237636,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.748,0.711666349,expected_measurement_fail
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,gain,Gain @ 4000 Hz,,PASS,PASS,,1,2.341,20.0562081,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.066,0.144331066,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,snr,SNR @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.902,47.9259971,expected_measurement_fail
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,noise_floor,Noise floor,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.803,-50.586138,expected_measurement_fail
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.452,17.0546794,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.111,19.8008656,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.403,20.0569297,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.379,20.0642326,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.523,20.0635611,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.315,20.0553614,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.68,19.769499,pass
+134,run-20261116-183819-fcdd,full_pipeline,NOISY,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.623,17.053762,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,rms,RMS @ 4000 Hz,,PASS,PASS,,1,1.744,0.353824876,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,gain,Gain @ 4000 Hz,,PASS,PASS,,1,2.309,20.006973,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.28,0.0710268132,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,snr,SNR @ 4000 Hz,,PASS,PASS,,1,2.2,71.8574521,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.154,-80.5861331,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.557,17.0059758,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,3.221,19.7529749,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,3.406,20.0092712,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,3.205,20.0158238,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.849,20.016131,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,3.098,20.0069192,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,3.709,19.7216086,pass
+135,run-20261116-183819-c463,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,5.308,17.0059174,pass
+136,run-20261116-183819-5f37,snr_measurement,NOISY,1.0.0,snr,SNR @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,2.228,33.6596683,expected_measurement_fail
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.91,17.0060406,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.774,19.7531099,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.278,20.0092674,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.204,20.0158556,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.15,20.0162251,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.497,20.0069909,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.612,19.721645,pass
+137,run-20261116-183819-5980,frequency_sweep,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.158,17.0060371,pass
+138,run-20261116-183819-7f09,thd_measurement,HIGHTHD,1.0.0,thd,THD @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,3.73,2.96154984,expected_measurement_fail
+139,run-20261116-183819-9576,thd_measurement,NORMAL,1.0.0,thd,THD @ 2000 Hz,,PASS,PASS,,1,2.22,0.310591367,pass
+140,run-20261116-183819-d478,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.924,-80.6786324,pass
+141,run-20261116-183819-7e74,thd_measurement,NOISY,1.1.0,thd,THD @ 4000 Hz,,PASS,PASS,,1,2.481,0.101491293,pass
+142,run-20261116-183819-c64b,noise_floor,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,2.28,-81.6933143,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,rms,RMS @ 500 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.946,0.711757995,expected_measurement_fail
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,3.301,20.0579389,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,thd,THD @ 500 Hz,,PASS,PASS,,1,2.851,0.317963967,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,snr,SNR @ 500 Hz,,PASS,PASS,,1,2.878,77.9205734,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.553,-80.6052111,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,3.543,17.0546036,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,3.262,19.8016305,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.53,20.0579346,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.415,20.0644617,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.116,20.0648023,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.3,20.0555559,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.528,19.7702641,pass
+143,run-20261116-183819-d27f,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,3.154,17.0545745,pass
+144,run-20261116-183820-8031,gain_verification,NORMAL,1.0.0,gain,Gain @ 500 Hz,,PASS,PASS,,1,2.643,19.9956908,pass
+145,run-20261116-183820-ba80,rms_measurement,NORMAL,1.0.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.799,0.141308198,expected_measurement_fail
+146,run-20261116-183820-1df2,gain_verification,CLIPPING,1.1.0,gain,Gain @ 2000 Hz,,PASS,PASS,,1,4.05,20.0025694,pass
+147,run-20261116-183820-fa97,rms_measurement,NORMAL,1.0.0,rms,RMS @ 500 Hz,timeout,ERROR,ERROR,COMM_TIMEOUT,2,2029.311,,expected_injected_fault
+148,run-20261116-183822-bf85,rms_measurement,NORMAL,1.1.0,rms,RMS @ 4000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.84,0.141308058,expected_measurement_fail
+149,run-20261116-183822-d860,snr_measurement,LOWGAIN,1.1.0,snr,SNR @ 1000 Hz,,PASS,PASS,,1,1.945,72.6988948,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,rms,RMS @ 250 Hz,,PASS,PASS,,1,1.778,0.350050717,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.397,19.9064596,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,thd,THD @ 250 Hz,,PASS,PASS,,1,1.97,0.119639109,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,2.06,71.778878,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.778,-80.5906084,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.392,17.0059758,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.927,19.7529749,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.973,20.0092712,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,3.253,20.0158238,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.288,20.016131,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.283,20.0069192,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.284,19.7216086,pass
+150,run-20261116-183822-4d0d,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.779,17.0059174,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,rms,RMS @ 250 Hz,,PASS,PASS,,1,1.698,0.350050717,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.298,19.9064596,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,thd,THD @ 250 Hz,,PASS,PASS,,1,1.892,0.119639109,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,snr,SNR @ 250 Hz,,PASS,PASS,,1,1.809,71.778878,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,1.581,-80.5906084,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 100 Hz,,PASS,PASS,,1,2.358,17.0059758,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 200 Hz,,PASS,PASS,,1,2.35,19.7529749,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 500 Hz,,PASS,PASS,,1,2.085,20.0092712,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 1000 Hz,,PASS,PASS,,1,2.344,20.0158238,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 2000 Hz,,PASS,PASS,,1,2.298,20.016131,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 4000 Hz,,PASS,PASS,,1,2.412,20.0069192,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 6000 Hz,,PASS,PASS,,1,2.261,19.7216086,pass
+151,run-20261116-183822-b7b7,full_pipeline,NORMAL,1.0.0,freq_sweep,Gain sweep @ 8000 Hz,,PASS,PASS,,1,2.016,17.0059174,pass
+152,run-20261116-183822-5d94,gain_verification,HIGHTHD,1.0.0,gain,Gain @ 4000 Hz,timeout,ERROR,ERROR,COMM_TIMEOUT,2,2028.139,,expected_injected_fault
+153,run-20261116-183824-a795,rms_measurement,CLIPPING,1.0.0,rms,RMS @ 2000 Hz,,FAIL,FAIL,OUT_OF_TOLERANCE_LOW,1,1.762,0.256000897,expected_measurement_fail
+154,run-20261116-183824-4599,noise_floor,NORMAL,1.1.0,noise_floor,Noise floor,,PASS,PASS,,1,2.209,-81.6933143,pass
+155,run-20261116-183824-4aaf,gain_verification,CLIPPING,1.1.0,gain,Gain @ 1000 Hz,,PASS,PASS,,1,2.584,20.0020838,pass
+156,run-20261116-183825-dd50,noise_floor,NOISY,1.1.0,noise_floor,Noise floor,,FAIL,FAIL,OUT_OF_TOLERANCE_HIGH,1,1.886,-51.6609774,expected_measurement_fail
+157,run-20261116-183825-f433,snr_measurement,NORMAL,1.0.0,snr,SNR @ 2000 Hz,disconnect,ERROR,ERROR,COMM_DISCONNECTED,2,230.868,,expected_injected_fault
+158,run-20261116-183825-506a,thd_measurement,CLIPPING,1.1.0,thd,THD @ 250 Hz,,PASS,PASS,,1,2.666,0.0330531336,pass
+159,run-20261116-183825-9a59,noise_floor,NORMAL,1.0.0,noise_floor,Noise floor,,PASS,PASS,,1,2.636,-80.6586787,pass
+160,run-20261116-183825-46c8,gain_verification,NORMAL,1.0.0,gain,Gain @ 250 Hz,,PASS,PASS,,1,2.47,19.8927497,pass
