@@ -144,6 +144,10 @@ jobs:
         with:
           name: backend-binary
           path: backend/build
+      - uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist
       - run: chmod +x backend/build/measureflow_backend
       - run: python -m pytest -q tests/integration tests/api
 
