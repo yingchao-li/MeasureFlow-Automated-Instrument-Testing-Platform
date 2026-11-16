@@ -47,18 +47,36 @@ jobs:
 
   backend-coverage:
     name: C++ coverage (gate 85 %)
+    needs: [frontend]
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            simulator/requirements.txt
+            tests/requirements.txt
       - name: Install toolchain
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends cmake ninja-build g++ gcovr
+      - run: pip install -r simulator/requirements.txt -r tests/requirements.txt
       - run: cmake -S backend -B build-cov -G Ninja -DCMAKE_BUILD_TYPE=Debug -DMF_COVERAGE=ON
       - run: cmake --build build-cov
       - run: ./build-cov/measureflow_tests
+      - name: Exercise backend through its API
+        env:
+          MF_BACKEND: ${{ github.workspace }}/build-cov/measureflow_backend
+        run: python -m pytest -q tests/integration tests/api
       - name: Coverage of backend/src
         run: |
           gcovr -r backend --filter 'backend/src/' --exclude 'backend/src/main.cpp' \
                 --object-directory build-cov --print-summary --fail-under-line 85 \
+                --gcov-ignore-parse-errors=negative_hits.warn \
                 --xml coverage.xml --html-details coverage.html
       - uses: actions/upload-artifact@v4
         with:
